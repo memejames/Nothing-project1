@@ -1,5 +1,5 @@
 # Mobile Friendly Orion Library
-This documentation is for 'Mobile Friendly Verion' of Orion Library.
+This documentation is for 'Mobile Friendly Version' of Orion Library.
 
 ## Booting the Library
 ```lua
