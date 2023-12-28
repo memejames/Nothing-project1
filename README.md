@@ -12,6 +12,8 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/ion
 ```lua
 local Window = OrionLib:MakeWindow({Name = "Title of the library", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
+-- Down below are the value that u can put in the 'Window'
+
 --[[
 Name = <string> - The name of the UI.
 HidePremium = <bool> - Whether or not the user details shows Premium status or not.
