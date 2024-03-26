@@ -1,3 +1,5 @@
+# Suku doesn't have slider mobile support, Jkj does, Thank me.
+
 # Mobile Friendly Orion Library
 This documentation is for 'Mobile Friendly Version' of Orion Library.
 
