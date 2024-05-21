@@ -1,0 +1,45 @@
+local gui3 = Instance.new("ScreenGui")
+
+gui3.Parent = game.CoreGui
+
+gui3.ResetOnSpawn = false
+
+gui3.Name = "7899e57282f4"
+
+
+
+local imageButton = Instance.new("ImageButton")
+
+imageButton.Image = "rbxassetid://14500306259"
+
+imageButton.Size = UDim2.new(0, 100, 0, 50) -- Set width to 100 pixels and height to 50 pixels
+
+imageButton.Position = UDim2.new(0.1, 0, 0.1, 0) -- Center the button within its parent
+
+imageButton.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+
+imageButton.Parent = gui3
+
+
+
+local aspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+
+aspectRatioConstraint.Parent = imageButton
+
+aspectRatioConstraint.AspectRatio = 1
+
+
+
+local UICorner1 = Instance.new("UICorner")
+
+UICorner1.Parent = imageButton
+
+UICorner1.CornerRadius = UDim.new(0, 8)
+
+local Orion = game.CoreGui.Orion
+
+local function ondigbar()
+if Orion then
+        Orion.Enabled = not Orion.Enabled
+        end
+end
