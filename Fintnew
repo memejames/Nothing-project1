@@ -1797,14 +1797,12 @@ local Orion = game.CoreGui.Orion
 
 
 
-local u = imageButto
-local on = false
+local u = game:GetService("UserInputService")
 
-u.InputBegan:Connect(function(input) -- input is when you press a key
-	if input.KeyCode == Enum.KeyCode.LeftShift then -- click N
-		on = not on -- if its true, its false. if its false, its true.
-		game.CoreGui.Orion = on
-	end
+u.InputBegan:Connect(function(input)
+    if input.KeyCode == Enum.KeyCode.LeftShift then
+        print(".")
+    end
 end)
 
 
