@@ -1772,12 +1772,12 @@ gui3.Name = "7899e57282f4"
 
 
 
-local imageButton = Instance.new("ImageButton")
-imageButton.Image = "rbxassetid://14500306259"
-imageButton.Size = UDim2.new(0, 100, 0, 50) -- Set width to 100 pixels and height to 50 pixels
-imageButton.Position = UDim2.new(0.1, 0, 0.1, 0) -- Center the button within its parent
-imageButton.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-imageButton.Parent = gui3
+local imageButto = Instance.new("ImageButton")
+imageButto.Image = "rbxassetid://14500306259"
+imageButto.Size = UDim2.new(0, 100, 0, 50) -- Set width to 100 pixels and height to 50 pixels
+imageButto.Position = UDim2.new(0.1, 0, 0.1, 0) -- Center the button within its parent
+imageButto.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+imageButto.Parent = gui3
 
 
 
@@ -1788,7 +1788,7 @@ aspectRatioConstraint.AspectRatio = 1
 
 
 local UICorner1 = Instance.new("UICorner")
-UICorner1.Parent = imageButton
+UICorner1.Parent = imageButto
 UICorner1.CornerRadius = UDim.new(0, 8)
 
 
@@ -1797,15 +1797,15 @@ local Orion = game.CoreGui.Orion
 
 
 
-local function ondigbar()
-if Orion then
-        Orion.Enabled = not Orion.Enabled
-        end
-end
+local u = imageButto
+local on = false
 
-
-
-imageButton.MouseButton1Click:Connect(ondigbar)
+u.InputBegan:Connect(function(input) -- input is when you press a key
+	if input.KeyCode == Enum.KeyCode.LeftShift then -- click N
+		on = not on -- if its true, its false. if its false, its true.
+		game.CoreGui.Orion = on
+	end
+end)
 
 
 
@@ -1817,7 +1817,7 @@ local inputService = game:GetService("UserInputService")
 
 
 
-imageButton.InputBegan:Connect(function(input)
+imageButto.InputBegan:Connect(function(input)
 
     if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
 
@@ -1843,7 +1843,7 @@ inputService.InputChanged:Connect(function(input)
 
         local currentInputPosition = input.Position
 
-        imageButton.Position = UDim2.new(0, currentInputPosition.X, 0, currentInputPosition.Y) + dragStartOffset
+        imageButto.Position = UDim2.new(0, currentInputPosition.X, 0, currentInputPosition.Y) + dragStartOffset
 
     end
 
