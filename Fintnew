@@ -1017,7 +1017,7 @@ function OrionLib:MakeWindow(WindowConfig)
 					AddThemeObject(SetProps(MakeElement("Label", "value", 13), {
 						Size = UDim2.new(1, -12, 0, 14),
 						Position = UDim2.new(0, 12, 0, 6),
-						Font = Enum.Font.Sarpanch,
+						Font = Enum.Font.GothamBold,
 						Name = "Value",
 						TextTransparency = 0
 					}), "Text")
@@ -1034,7 +1034,7 @@ function OrionLib:MakeWindow(WindowConfig)
 					AddThemeObject(SetProps(MakeElement("Label", "value", 13), {
 						Size = UDim2.new(1, -12, 0, 14),
 						Position = UDim2.new(0, 12, 0, 6),
-						Font = Enum.Font.Sarpanch,
+						Font = Enum.Font.GothamBold,
 						Name = "Value",
 						TextTransparency = 0.8
 					}), "Text"),
@@ -1048,7 +1048,7 @@ function OrionLib:MakeWindow(WindowConfig)
 					AddThemeObject(SetProps(MakeElement("Label", SliderConfig.Name, 15), {
 						Size = UDim2.new(1, -12, 0, 14),
 						Position = UDim2.new(0, 12, 0, 10),
-						Font = Enum.Font.Sarpanch,
+						Font = Enum.Font.GothamBold,
 						Name = "Content"
 					}), "Text"),
 					AddThemeObject(MakeElement("Stroke"), "Stroke"),
