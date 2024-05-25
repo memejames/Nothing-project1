@@ -20,9 +20,17 @@ local OrionLib = {
 			Divider = Color3.fromRGB(60, 60, 60),
 			Text = Color3.fromRGB(240, 240, 240),
 			TextDark = Color3.fromRGB(150, 150, 150)
+		},
+                FH = {
+			Main = Color3.fromRGB(0, 38, 89),
+			Second = Color3.fromRGB(0, 45, 96),
+			Stroke = Color3.fromRGB(0, 53, 104),
+			Divider = Color3.fromRGB(0, 53, 104),
+			Text = Color3.fromRGB(240, 240, 240),
+			TextDark = Color3.fromRGB(150, 150, 150)
 		}
 	},
-	SelectedTheme = "Default",
+	SelectedTheme = "FH",
 	Folder = nil,
 	SaveCfg = false
 }
